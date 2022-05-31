@@ -1,8 +1,7 @@
 import cv2 as cv                    # https://docs.opencv.org/4.5.5/
 from Class_Window_Capture import Window_Capture
-A = "Vampire Survivors"
-B = "gjghjahajhaht"
-WinCap = Window_Capture(B)
+
+WinCap = Window_Capture("Name of Window to Capture")
 
 while(True):
     
