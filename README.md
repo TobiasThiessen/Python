@@ -19,3 +19,6 @@ https://github.com/wuxc/pywin32doc
 
 ### PyAutoGUI
 https://pyautogui.readthedocs.io/en/latest/
+
+## Tkinter
+https://tkdocs.com/pyref/index.html
