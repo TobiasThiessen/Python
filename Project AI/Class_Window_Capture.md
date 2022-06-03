@@ -1,23 +1,25 @@
 # Class_Window_Capture.py
-Flowchart:
+##### Class Flowchart:
 > Class_Window_Capture (ON/OFF) >>> Class_Window_Overlay |
 
 ## __init__(self):
 Sets the following variables for the class
 ```
-hwnd = String
-Overlay = True / False
-hwnd_resize = True / False
+hwnd = win32gui.FindWindow(None, selected_hwnd)
+hwnd_overlay = True
+hwnd_resize = True
 ```
-1. hwnd: window handle string used to detect desired window in Window_Capture
-2. Overlay: if True, will enable screenshot manipulation that draws certain features.
-3. hwnd_resize: if True, will resize the screenshot to always be 1/4th the size of the primary monitor 
+> hwnd_overlay: if enabled, Class_Window_Overlay will be constructed
 
 ## Window_Capture(self):
 Screenshots desired window or primary screen.
 ```
+self.hwnd_rect = win32gui.GetWindowRect(self.hwnd)
+Screenshot = PIL.ImageGrab.grab(self.hwnd_rect)
+Screenshot = np.ascontiguousarray(Screenshot)
+Screenshot = Screenshot[:, :, ::-1].copy()
 return Screenshot
 ```
-1. Screenshot: Primarily a MAT or NBArray object, made to work with opencv imshow
-Called by:
+> Screenshot: is a MAT or NBArray variable usable by openCV
+##### Called by:
 - Class_Window_Search.FIND(self, Threshold, State)
