@@ -10,25 +10,25 @@ Moved the overlay into its own class file, and using tkinter made prompts to hel
 ## Version 3
 N/A
 
-
+-------------------------------------------------------------------------------------------------------------------------
 # Function Documention / Index
 ## Main.py
 ```
 Flowchart:
-Main --] Game_VampireSurvivors --] Window_Search --] Window_Capture --] Window_Overlay
+Main >>> Class_Game_VampireSurvivors >>> Class_Window_Search >>> Class_Window_Capture >>> Class_Window_Overlay
 ```
 
 ## Class_Window_Capture.py
 ```
 Flowchart:
-Window_Capture (ON/OFF) --] Window_Overlay
+Class_Window_Capture (ON/OFF) >>> Class_Window_Overlay
 ```
 ### __init__(self):
 Builds a window with tkINTER and prompts user for desired settings. (Such as Overlay)
-Used by: Class_Window_Capture.Window_Capture()
 
 ### Window_Capture(self)
 Screenshots desired window or primary screen.
-> Returns Screenshot
+> return Screenshot
+[Used by: Class_Window_Search.FIND(self, Threshold, State]
 
 ## Class_Window_Overlay.py
