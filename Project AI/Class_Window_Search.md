@@ -4,6 +4,7 @@
 
 ## __init__(self, NeedleImage_Path):
 Requires file path to Needle Image
+
 Sets the following variables for the class
 ```
 NeedleImage = cv.imread(NeedleImage_Path, cv.IMREAD_UNCHANGED)
