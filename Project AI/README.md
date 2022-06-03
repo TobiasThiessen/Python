@@ -10,7 +10,6 @@ Moved the overlay into its own class file, and using tkinter made prompts to hel
 ## Version 3
 N/A
 
-#
 # Function Documention / Index
 ## Main.py
 ```
@@ -29,6 +28,7 @@ Builds a window with tkINTER and prompts user for desired settings. (Such as Ove
 ### Window_Capture(self)
 Screenshots desired window or primary screen.
 > return Screenshot
-[Used by: Class_Window_Search.FIND(self, Threshold, State]
+##### Called by:
+1. Class_Window_Search.FIND(self, Threshold, State)
 
 ## Class_Window_Overlay.py
