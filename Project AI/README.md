@@ -1,5 +1,4 @@
 # Project AI
-
 ## Version 1
 Using openCV, win32gui and PILLOW to screenshot any window or the primary desktop.
 Draws mouse location on the screenshots (red dot) and FPS if enabled in the code.
@@ -15,16 +14,15 @@ N/A
 Flowchart:
 > Main >>> Class_Game_VampireSurvivors >>> Class_Window_Search >>> Class_Window_Capture >>> Class_Window_Overlay
 
-
 ## Class_Window_Capture.py
 Flowchart:
 > Class_Window_Capture (ON/OFF) >>> Class_Window_Overlay
 
-```
 ### Window_Capture(self)
-```
 Screenshots desired window or primary screen.
-> return Screenshot
+```
+return Screenshot
+```
 ##### Called by:
 1. Class_Window_Search.FIND(self, Threshold, State)
 
