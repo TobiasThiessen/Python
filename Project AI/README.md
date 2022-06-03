@@ -13,12 +13,16 @@ N/A
 
 # Function Documention / Index
 ## Main.py
-Flowchart:
 ```
+Flowchart:
 Main --] Game_VampireSurvivors --] Window_Search --] Window_Capture --] Window_Overlay
 ```
 
 ## Class_Window_Capture.py
+```
+Flowchart:
+Window_Capture (ON/OFF) --] Window_Overlay
+```
 ### __init__(self):
 Builds a window with tkINTER and prompts user for desired settings. (Such as Overlay)
 Used by: Class_Window_Capture.Window_Capture()
