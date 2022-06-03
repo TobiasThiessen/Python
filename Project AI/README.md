@@ -12,20 +12,17 @@ N/A
 
 # Function Documention / Index
 ## Main.py
-```
 Flowchart:
-Main >>> Class_Game_VampireSurvivors >>> Class_Window_Search >>> Class_Window_Capture >>> Class_Window_Overlay
-```
+> Main >>> Class_Game_VampireSurvivors >>> Class_Window_Search >>> Class_Window_Capture >>> Class_Window_Overlay
+
 
 ## Class_Window_Capture.py
-```
 Flowchart:
-Class_Window_Capture (ON/OFF) >>> Class_Window_Overlay
-```
-### __init__(self):
-Builds a window with tkINTER and prompts user for desired settings. (Such as Overlay)
+> Class_Window_Capture (ON/OFF) >>> Class_Window_Overlay
 
+```
 ### Window_Capture(self)
+```
 Screenshots desired window or primary screen.
 > return Screenshot
 ##### Called by:
