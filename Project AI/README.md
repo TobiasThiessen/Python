@@ -10,7 +10,7 @@ Moved the overlay into its own class file, and using tkinter made prompts to hel
 ## Version 3
 N/A
 
--------------------------------------------------------------------------------------------------------------------------
+#
 # Function Documention / Index
 ## Main.py
 ```
