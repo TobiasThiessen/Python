@@ -1,20 +1,33 @@
 # Class_Window_Overlay.py
-Flowchart:
+##### Class Flowchart:
 > Class_Window_Overlay |
 
 ## __init__(self):
 Sets the following variables for the class
 ```
-Draw FPS: True / False
-Draw Mouse: True / False
+draw_FPS = True / False
+draw_Mouse = True / False
+if draw_FPS:
+    Loop_Time = time()
 ```
-1. Draw FPS: if True, will draw FPS on the TOP LEFT of the image
-2. Draw Mouse: if True, will capture mouse location and draw a RED DOT accordingly
+> Loop_Time: Used to count the amount of screenshots taken per second, which translates to FPS
 
-## Window_Overlay(self, hwnd_desktop, Screenshot):
+## Window_Overlay(self, hwnd_desktop, hwnd, Screenshot):
 ```
-return Screenshot
+if draw_Mouse:
+    MouseXY = win32gui.GetCursorPos()
+    if hwnd_desktop:
+        DrawXY = MouseXY
+    if not hwnd_desktop:
+        DrawXY = tuple(map(lambda i, j: i - j, MouseXY, WindowTopLeft))
+    Screenshot = cv.circle(Screenshot, DrawXY, 5, DrawColor, -1)
+    
+if draw_FPS:
+    FPSText = str(round(sum(self.FPS) / len(self.FPS)))
+    Screenshot = cv.putText(Screenshot, FPSText, (0, 30), cv.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv.FILLED)
+    
+ return Screenshot
 ```
-1. Screenshot: Primarily a MAT or NBArray object, made to work with opencv imshow
-Called by:
+> Screenshot: Primarily a MAT or NBArray object, made to work with opencv imshow
+##### Called by:
 - Class_Window_Capture.Window_Capture(self)
