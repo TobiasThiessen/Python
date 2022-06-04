@@ -11,6 +11,7 @@ NeedleImage_W = NeedleImage.shape[1]
 NeedleImage_H = NeedleImage.shape[0]
 Method = TM_SQDIFF, TM_SQDIFF_NORMED, TM_CCORR, TM_CCORR_NORMED, TM_CCOEFF, TM_CCOEFF_NORMED
 ```
+> NeedleImage: is a MAT variable made and usable by openCV
 
 ## FIND(self, threshold = 0.5, State = 1):
 Threshold is used to determine accuracy of the function, 1 requires 1:1 HaystackImage:NeedleImage Pixels 
