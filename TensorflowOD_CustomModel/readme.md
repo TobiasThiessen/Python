@@ -64,12 +64,18 @@ This should automatically make a virtual environment named "VENV" and install al
 3. Update labels in "pythonfilename.py" to match labels from previous step.
 4. From main.py uncomment a model
 
-## Extra Information:
+# Ideal Improvements:
+#### Write_Records
+Should only be called when image numbers or labels change.
+
+#### Stop using OS to call CMD
+Very inefficient and hard to keep track.
+
+# Extra Information:
 #### How to label:
 > python labeling.py
 
-The script can be 
-
+The script should ideally be ran in the VENV of the project, as it will already have the installed modules necessary.
 
 #### Model Zoo:
 https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md
