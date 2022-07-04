@@ -31,7 +31,7 @@ Use whatever method to run the script, i.e. from IDE or CMD.
 This should automatically make a virtual environment named "VENV" and install all the necesarry packages from "library_requirements.txt".
 
 
-
+## Extra Information:
 ### Model Zoo:
 https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md
 
@@ -42,3 +42,10 @@ Known to work:
 Known to not work:
 - CenterNet Resnet50 V2 512x512
 - CenterNet Resnet50 V1 FPN 512x512
+
+### Hardware known to function
+Processors:
+- AMD Ryzen 5 3600X 
+
+GPUs:
+- NVidia Geforce GTX 1060 6GB (Driver Version: 516.01)
