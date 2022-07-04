@@ -40,3 +40,4 @@ Known to work:
 
 Known to not work:
 - CenterNet Resnet50 V2 512x512
+- CenterNet Resnet50 V1 FPN 512x512
