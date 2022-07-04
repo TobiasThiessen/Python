@@ -30,3 +30,13 @@ Check if cuDNN 8.1.1 is installed by reading the following header file:
 Use whatever method to run the script, i.e. from IDE or CMD.
 This should automatically make a virtual environment named "VENV" and install all the necesarry packages from "library_requirements.txt".
 
+
+
+### Model Zoo:
+https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md
+
+Known to work:
+- SSD MobileNet V2 FPNLite 640x640
+
+Known to not work:
+- CenterNet Resnet50 V2 512x512
