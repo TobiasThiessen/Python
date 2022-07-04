@@ -37,6 +37,7 @@ https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc
 
 Known to work:
 - SSD MobileNet V2 FPNLite 640x640
+- EfficientDet D0 512x512
 
 Known to not work:
 - CenterNet Resnet50 V2 512x512
