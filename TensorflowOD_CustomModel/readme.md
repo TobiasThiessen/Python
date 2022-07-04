@@ -18,10 +18,11 @@ Known to not work:
 - CUDA 11.7
 - cudNN 8.4.1
 
-Python download:  https://www.python.org/downloads/
-CUDA download:    https://developer.nvidia.com/cuda-downloads (may require nvidia dev account (free))
-cuDNN download:   https://developer.nvidia.com/rdp/cudnn-download (requires nvidia dev account (free))
-GIT download:     https://git-scm.com/download/win
+Downloads:
+- Python download:  https://www.python.org/downloads/
+- CUDA download:    https://developer.nvidia.com/cuda-downloads (may require nvidia dev account (free))
+- cuDNN download:   https://developer.nvidia.com/rdp/cudnn-download (requires nvidia dev account (free))
+- GIT download:     https://git-scm.com/download/win
 
 # Installation / Setup:
 #### Step 1: Install prerequisites
