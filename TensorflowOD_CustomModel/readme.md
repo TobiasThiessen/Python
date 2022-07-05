@@ -81,6 +81,7 @@ The script should ideally be ran in the VENV of the project, as it will already 
 https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md
 
 Known to work:
+- SSD MobileNet v2 320x320
 - SSD MobileNet V2 FPNLite 640x640
 - EfficientDet D0 512x512
 
