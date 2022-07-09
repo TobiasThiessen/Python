@@ -1,5 +1,5 @@
 # Functions
-## train_model(modelnumber, modelname, trainingsteps)
+## __train_model__(modelnumber, modelname, trainingsteps)
 |variable|info|
 |---:|:---|
 |modelnumber|see "modelZoo_list.py" for the available models and urls|
