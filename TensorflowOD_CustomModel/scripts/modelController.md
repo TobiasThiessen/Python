@@ -1,7 +1,11 @@
 # Functions
+## train_model(modelnumber, modelname, trainingsteps)
+|modelnumber|info|
+|-----------|----|
 
-|train_model|(modelnumber, modelname, trainingsteps)|
-|-------------|-------------|
-|modelnumber|see "modelZoo_list.py" for the available models and urls|
-|modelname  |name of the model folder for the custom model|
-|trainingsteps|default = 5000|
+|modelnumber|
+see "modelZoo_list.py" for the available models and urls|
+|modelname|
+name of the model folder for the custom model|
+|trainingsteps|
+default = 5000|
