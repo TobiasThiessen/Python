@@ -44,19 +44,3 @@ modelZoo_URLs = {
     40: "http://download.tensorflow.org/models/object_detection/tf2/20200711/faster_rcnn_inception_resnet_v2_1024x1024_coco17_tpu-8.tar.gz",
     41: "http://download.tensorflow.org/models/object_detection/tf2/20200711/mask_rcnn_inception_resnet_v2_1024x1024_coco17_gpu-8.tar.gz"
 }
-
-
-def testshizzle():
-    import os
-    FolderList = os.getcwd().split("\\")
-    i = 0
-    for folder in FolderList:
-        print(i, folder)
-        i = i + 1
-    Folder = int(input("Choose root folder by number:"))
-    
-    FolderPath = ""
-    for i in range (0, Folder):
-        FolderPath = FolderPath + FolderList[i] + "\\"
-    
-    print(FolderPath)
